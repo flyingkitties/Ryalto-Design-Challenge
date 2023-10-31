@@ -348,13 +348,9 @@ nav a {
 .post-next-page a {
   display: flex;
   align-items: center;
-  color: gray;
+  color: #2893e5;
   padding: 0 2rem;
   text-decoration: none;
-}
-
-.post-next-page a:last-child:hover {
-  color: #2893e5;
 }
 
 @media only screen and (max-width: 1024px) {
