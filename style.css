@@ -92,24 +92,6 @@ nav a {
     height: 2rem;
   }
 }
-/* 
-@media only screen and (max-width: 425px) {
-  header .content {
-    display: flex;
-  }
-  .header-logo {
-    padding: 0.5rem 0 0.5rem 0.5rem;
-  }
-  header h1 {
-    font-size: 0.85rem;
-  }
-  .header-nav {
-    padding-right: 0.5rem;
-  }
-  nav li a {
-    font-size: 0.65rem;
-  }
-} */
 
 @media only screen and (max-width: 425px) {
   header .content {
@@ -171,17 +153,18 @@ nav a {
 }
 
 .banner-image {
-  max-width: 40%;
+  display: flex;
+  align-items: center;
 }
 
 .banner-image img {
-  max-height: 100%;
-  width: auto;
+  max-width: 100%;
+  height: auto;
 }
 
 @media only screen and (max-width: 1024px) {
   #banner-section {
-    padding: 9% 20%;
+    padding: 9% 15%;
   }
   .banner-header {
     font-size: 1.5rem;
@@ -189,6 +172,9 @@ nav a {
   .banner-text h2 {
     font-size: 1rem;
   }
+}
+
+@media only screen and (max-width: 768px) {
   .banner-image img {
     display: none;
   }
@@ -208,6 +194,9 @@ nav a {
   }
 }
 @media only screen and (max-width: 375px) {
+  #banner-section {
+    padding: 9% 9% 20% 9%;
+  }
   .main-content {
     top: 6rem;
   }
@@ -254,7 +243,9 @@ nav a {
 .developer-blog {
   padding: 2% 15% 10% 15%;
 }
-
+.developer-blog-header {
+  padding: 5%;
+}
 .developer-blog-header h2 {
   font-size: 2.5rem;
   font-family: 'Roboto', sans-serif;
@@ -375,9 +366,6 @@ nav a {
   .developer-blog-sub-header p {
     font-size: 0.5rem;
   }
-  .blog-posts-grid {
-    grid-template-columns: 1fr;
-  }
   .post-top h1 {
     font-size: 1.5rem;
     padding-bottom: 1rem;
@@ -389,7 +377,15 @@ nav a {
     font-size: 1rem;
   }
 }
+@media only screen and (max-width: 768px) {
+  .blog-posts-grid {
+    grid-template-columns: 1fr;
+  }
+}
 @media only screen and (max-width: 425px) {
+  .developer-blog {
+    padding: 2% 10% 10% 10%;
+  }
   .developer-blog-header h2 {
     font-size: 1.5rem;
   }
@@ -397,7 +393,7 @@ nav a {
     font-size: 0.5rem;
   }
   .developer-blog-sub-header p {
-    font-size: 0.3rem;
+    font-size: 0.4rem;
   }
   .post {
     padding: 1rem;
@@ -511,7 +507,7 @@ nav a {
 
 @media only screen and (max-width: 425px) {
   .footer {
-    font-size: 0.4rem;
+    font-size: 0.5rem;
     display: block;
     padding: 0.5rem 0;
   }
@@ -522,8 +518,9 @@ nav a {
     padding-bottom: 0.5rem;
   }
   .footer .copyright {
-    text-align: center;
-    font-size: 0.3rem;
+    display: flex;
+    justify-content: center;
+    font-size: 0.4rem;
     padding-bottom: 0.5rem;
   }
 }
