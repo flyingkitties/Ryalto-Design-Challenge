@@ -21,6 +21,7 @@
     <script
       src="https://kit.fontawesome.com/9666af4a33.js"
       crossorigin="anonymous"
+      defer
     ></script>
     
     <meta charset="UTF-8" />
@@ -46,7 +47,7 @@
           >
           <img
             src="./resources/logo.png"
-            alt=""/>
+            alt="Ryalto Logo"/>
           </a>
         </div>
         <!-- Page title -->
@@ -55,7 +56,7 @@
         </div>
         
         <!-- Nav -->
-        <nav class="header-nav">
+        <nav class="header-nav" tabindex="1">
           <ul>
             <li><a href="#" aria-label="Blog">Blog</a></li>
             <li><a href="#" aria-label="Our Team">Our Team</a></li>
@@ -65,7 +66,7 @@
       </div>
     </header>
     <!-- Main content -->
-    <main class="main-content">
+    <mai n class="main-content">
       <!-- Banner Section -->
       <div
         id="banner-section"
@@ -91,7 +92,7 @@
         </div>
       </div>
       <!-- Social Section -->
-      <section class="social-section">
+      <section class="social-section" tabindex="2">
         <a href="#" aria-label="Github"><i class="fa-brands fa-github"></i></a>
         <a href="#" aria-label="Twitter"><i class="fa-brands fa-twitter"></i></a>
         <a href="#" aria-label="Linkedin"><i class="fa-brands fa-linkedin"></i></a>
@@ -111,7 +112,7 @@
         <!-- Blog posts -->
         <div class="blog-posts-grid">
           <!-- Blog post 1 -->
-          <div class="post">
+          <div class="post" tabindex="3" aria-label="Migrating to GitHub Actions for Rails CI">
             <div class="post-top">
               <h1>Migrating to GitHub Actions for Rails CI</h1>
               <p>RubyCI is tragically shutting down, so I'm migrating to GitHub Actions for Rails CI</p>
@@ -127,7 +128,7 @@
             </div>
           </div>
           <!-- Blog post 2 -->
-          <div class="post">
+          <div class="post" tabindex="3" aria-label="Our Engineering Principles">
             <div class="post-top">
               <h1>Our Engineering Principles</h1>
               <p>The principles that we follow as we build high quality software at Ryalto.</p>
@@ -143,7 +144,7 @@
             </div>
           </div>
           <!-- Blog post 3 -->
-          <div class="post">
+          <div class="post" tabindex="3" aria-label="Getting into Ruby on Rails">
             <div class="post-top">
               <h1>Getting into Ruby on Rails</h1>
               <p>A friend recently asked me how to get started with Ruby on Rails. I thought I'd write up my response here.</p>
@@ -159,7 +160,7 @@
             </div>
           </div>
           <!-- Blog post 4 -->
-          <div class="post">
+          <div class="post" tabindex="3" aria-label="Hotwire Handbook Part 2">
             <div class="post-top">
               <h1>Hotwire Handbook Part 2</h1>
               <p>Part Two of the Hotwire Handbook. A detailed dive into pagination with Hotwire. An extension to the excellent guide by David Colby.</p>
@@ -175,7 +176,7 @@
             </div>
           </div>
           <!-- Blog post 5 -->
-          <div class="post">
+          <div class="post" tabindex="3" aria-label="Upgrade or Rebuild?">
             <div class="post-top">
               <h1>Upgrade or Rebuild?</h1>
               <p>It&apos;s a question that many developers face. Maintenance takes a back seat to "urgent" new features, and before you know it your dependencies are way out of date.</p>
@@ -191,7 +192,7 @@
             </div>
           </div>
           <!-- Blog post 6 -->
-          <div class="post">
+          <div class="post" tabindex="3" aria-label="Admin Authorisation at Ryalto">
             <div class="post-top">
               <h1>Admin Authorisation at Ryalto</h1>
               <p>We're working on a better way to manage the relationship between users and organisations. This post it about our simple approach to admin users.</p>
@@ -207,7 +208,7 @@
             </div>
           </div>
           <!-- Blog post 7 -->
-          <div class="post">
+          <div class="post" tabindex="3" aria-label="Hotwire Handbook Part 1">
             <div class="post-top">
               <h1>Hotwire Handbook Part 1</h1>
               <p>A guide that covers a range of Hotwire use cases with examples. This part covers Toggle Buttons, Content Updates and Live Counters.</p>
@@ -223,7 +224,7 @@
             </div>
           </div>
           <!-- Blog post 8 -->
-          <div class="post">
+          <div class="post" tabindex="3" aria-label="Simple Javascript Theme Toggle">
             <div class="post-top">
               <h1>Simple Javascript Theme Toggle</h1>
             </div>
@@ -253,7 +254,7 @@
         <li><a href="#" aria-label="Cookie Policy">Cookie Policy</a></li>
       </ul>
       <span class="copyright">
-        <a href="https://www.ritaguilherme.com/" aria-label="2023 RG Builds">© 2023 RG Builds</a>
+        <a href="https://www.ritaguilherme.com/" rel="noopener"  target="_blank" aria-label="2023 RG Builds">© 2023 RG Builds</a>
       </span>
     </footer>
   </body>

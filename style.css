@@ -61,10 +61,11 @@ header h1 {
 header nav ul {
   display: flex;
   list-style-type: none;
+  padding-inline-start: 0;
 }
 
 nav li {
-  padding-left: 4rem;
+  padding-left: 3rem;
 }
 
 nav a {
@@ -92,8 +93,13 @@ nav a {
     height: 2rem;
   }
 }
+@media only screen and (max-width: 735px) {
+  header .content {
+    display: flex;
+  }
+}
 
-@media only screen and (max-width: 425px) {
+@media only screen and (max-width: 470px) {
   header .content {
     display: grid;
     grid-template-columns: 1fr 1fr;
